@@ -1,7 +1,7 @@
 About fps-auth
 ==============
 
-Home: https://github.com/jupyter-server/jupyverse/plugins/auth
+Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-auth-feedst
 
 Summary: An FPS plugin for the authentication API
 
-Development: https://github.com/jupyter-server/jupyverse/plugins/auth
+Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
 
 Current build status
 ====================
