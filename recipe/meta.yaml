@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps >=0.0.8
-    - aiosqlite
+    - fps >=0.0.8,<1.0.0
+    - aiosqlite <1.0.0
     - fastapi-users >=9.1.1,<10
     - fastapi-users-db-sqlalchemy >=1.1.0,<2.0.0
     - httpx-oauth >=0.4,<0.5
@@ -31,10 +31,10 @@ test:
     - fps_auth
 
 about:
-  home: https://github.com/jupyter-server/jupyverse/plugins/auth
+  home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
   summary: An FPS plugin for the authentication API
   keywords: jupyter, server, fastapi, pluggy, plugins
-  dev_url: https://github.com/jupyter-server/jupyverse/plugins/auth
+  dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
   license_file: COPYING.md
   license: BSD-3-Clause
   license_family: BSD
