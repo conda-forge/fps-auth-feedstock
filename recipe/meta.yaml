@@ -20,11 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps >=0.0.8,<1.0.0
-    - aiosqlite <1.0.0
-    - fastapi-users >=9.1.1,<10
-    - fastapi-users-db-sqlalchemy >=1.1.0,<2.0.0
-    - httpx-oauth >=0.4,<0.5
+    - fps <1
+    - aiosqlite <1
+    - fastapi-users >=10,<11
+    - fastapi-users-db-sqlalchemy >=4,<5
+    - httpx-oauth <1
 
 test:
   imports:
