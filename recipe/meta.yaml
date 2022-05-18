@@ -1,5 +1,5 @@
 {% set name = "fps-auth" %}
-{% set version = "0.0.32" %}
+{% set version = "0.0.33" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_auth-{{ version }}.tar.gz
-  sha256: d7cd4e2b7746dbfb1cfd5bf81d24abb40185909655198db9ebd4c76006bd2849
+  sha256: 0ebb471e73d1bcb57aff5f42e6f5cc27186a0615d8bc5024334f1b9f3b25c7c5
 
 build:
   noarch: python
@@ -20,11 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps >=0.0.8,<1.0.0
-    - aiosqlite <1.0.0
-    - fastapi-users >=9.1.1,<10
-    - fastapi-users-db-sqlalchemy >=1.1.0,<2.0.0
-    - httpx-oauth >=0.4,<0.5
+    - fps <1
+    - aiosqlite <1
+    - fastapi-users >=10,<11
+    - fastapi-users-db-sqlalchemy >=4,<5
+    - httpx-oauth <1
 
 test:
   imports:
