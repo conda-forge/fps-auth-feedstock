@@ -22,7 +22,7 @@ requirements:
     - python >=3.7
     - fps <1
     - aiosqlite <1
-    - fastapi-users >=10,<11
+    - fastapi-users >=10.1.4,<11
     - fastapi-users-db-sqlalchemy >=4,<5
     - httpx-oauth <1
 
