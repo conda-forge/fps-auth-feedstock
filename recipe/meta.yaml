@@ -20,7 +20,9 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps <1
+    - fps >=0.0.17,<1
+    - fps-uvicorn >=0.0.17,<1
+    - fps-login <1
     - aiosqlite <1
     - fastapi-users >=10.1.4,<11
     - fastapi-users-db-sqlalchemy >=4,<5
