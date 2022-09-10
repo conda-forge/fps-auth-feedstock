@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -24,9 +24,9 @@ requirements:
     - fps-uvicorn >=0.0.17,<1
     - fps-login <1
     - aiosqlite <1
-    - fastapi-users >=10.1.4,<11
+    - fastapi-users >=10.1.5,<11
     - fastapi-users-db-sqlalchemy >=4,<5
-    - httpx-oauth <1
+    - httpx-oauth >=0.4,<0.8
 
 test:
   imports:
