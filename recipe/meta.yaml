@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - fastapi-users >=10.1.5,<11
     - fastapi-users-db-sqlalchemy >=4,<5
     - httpx-oauth >=0.4,<0.8
+    - httpcore >0.13.3
 
 test:
   imports:
