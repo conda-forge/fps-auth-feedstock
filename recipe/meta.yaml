@@ -1,5 +1,5 @@
 {% set name = "fps-auth" %}
-{% set version = "0.0.41" %}
+{% set version = "0.0.42" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_auth-{{ version }}.tar.gz
-  sha256: f76ef5d2d0ad3b9ef89a4cc547f5b57bd0342119aaf07513bdf81b4527740ef4
+  sha256: e7ed373ce7150531d2462a4ab404dc72ab9e114ac06ee7d3b6adff44c12e0cd5
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.7
     - fps >=0.0.17,<1
+    - fps-lab <1
     - fps-uvicorn >=0.0.17,<1
     - fps-login <1
     - aiosqlite <1
