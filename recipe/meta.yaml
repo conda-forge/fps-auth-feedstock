@@ -1,5 +1,5 @@
 {% set name = "fps-auth" %}
-{% set version = "0.0.50" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_auth-{{ version }}.tar.gz
-  sha256: c7f8099c374d99d02d1697d84baf6b772de5cea82e1040d7e2a2c3f6a4558afd
+  sha256: 3e8a2c9cf3b73428604f390a5ac1c96182cacaeee3a3271bf6a3554b52bc10d0
 
 build:
   noarch: python
@@ -21,11 +21,8 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - fps >=0.0.17,<1
-    - fps-lab <1
-    - fps-uvicorn >=0.0.17,<1
-    - fps-login <1
-    - aiosqlite <1
+    - jupyverse-api >=0.1.2,<1
+    - aiosqlite
     - fastapi-users >=10.1.5,<11
     - fastapi-users-db-sqlalchemy >=4,<5
     - httpx-oauth >=0.4,<0.8
@@ -38,7 +35,7 @@ test:
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
   summary: An FPS plugin for the authentication API
-  keywords: jupyter, server, fastapi, pluggy, plugins
+  keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
   license_file: COPYING.md
   license: BSD-3-Clause
