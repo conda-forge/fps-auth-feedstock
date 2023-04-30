@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - jupyverse-api >=0.1.4,<1
     - aiosqlite
-    - fastapi-users >=10.1.5,<11
+    - fastapi-users >=11,<12
     - fastapi-users-db-sqlalchemy >=4,<5
     - httpx-oauth >=0.4,<0.8
     - httpcore >0.13.3
