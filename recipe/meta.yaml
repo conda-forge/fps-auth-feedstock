@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_auth-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_auth-{{ version }}.tar.gz
   sha256: c1eef08311c98ca04523156ef6c59edacc0daafc071397189188de5ad8130f17
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jupyverse-api >=0.1.4,<1
     - aiosqlite
     - fastapi-users >=13,<14
@@ -29,6 +29,8 @@ requirements:
     - httpcore >0.13.3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fps_auth
 
