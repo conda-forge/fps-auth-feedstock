@@ -1,5 +1,5 @@
 {% set name = "fps-auth" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_auth-{{ version }}.tar.gz
-  sha256: 9c036a90872753a40ceb2a1beb7713a267450cbcbfcfcb5e07eadcb761580586
+  sha256: 563966fd08aaf291d600e628364d0f2e9bbcd2d65ff1bec1a62461c00b7a4572
 
 build:
   noarch: python
