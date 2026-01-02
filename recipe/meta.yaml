@@ -1,5 +1,5 @@
 {% set name = "fps-auth" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_auth-{{ version }}.tar.gz
-  sha256: 8297c2d44c24ff91a98d362d90a16cfa5779fcba3a6d23d5694f848b10ebe4ae
+  sha256: 90272ef140b23ffd607f02e5304694d38b388eeb4b47e50a981a297f83ba5665
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - uv-build
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.12.0,<0.13.0
-    - aiosqlite
+    - jupyverse-api >=0.13.0,<0.14.0
+    - aiosqlite <0.22.0
     - fastapi-users >=14.0.1,<15.0.0
     - fastapi-users-db-sqlalchemy >=6
     - httpx-oauth >=0.13
