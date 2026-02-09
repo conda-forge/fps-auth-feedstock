@@ -7,9 +7,7 @@ Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
 
 Package license: BSD-3-Clause
 
-Summary: An FPS plugin for the authentication API
-
-Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/auth
+Summary: An FPS plugin for the authentication API.
 
 Current build status
 ====================
