@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.8"
+  version: "0.10.1"
 
 package:
   name: fps-auth
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-auth/fps_auth-${{ version }}.tar.gz
-    sha256: 50aaa346a4ad98e66643b60907453208b3038fff452d05e3014adcfc4a622691
+    sha256: 7166492c144c5214356caa810813e251588ce74def2eac61d6628dfcde69cf92
 
 build:
   noarch: python
