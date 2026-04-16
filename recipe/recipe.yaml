@@ -24,12 +24,20 @@ requirements:
     - uv-build
   run:
     - python >=${{ python_min }}
-    - jupyverse-api >=0.14.0,<0.15.0
     - aiosqlite <0.22.0
+    - fastapi-core
     - fastapi-users >=14.0.1,<15.0.0
     - fastapi-users-db-sqlalchemy >=6
+    - fps
+    - httpx
     - httpx-oauth >=0.13
     - httpcore >0.13.3
+    - jupyverse-api >=0.15.0,<0.16.0
+    - jupyverse-auth >=0.2.0,<0.3.0
+    - jupyverse-frontend >=0.1.0,<0.2.0
+    - sqlalchemy
+    - starlette
+    - structlog
 
 tests:
   - python:
